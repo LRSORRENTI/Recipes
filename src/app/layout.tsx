@@ -18,8 +18,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <nav>
-          <h1>
-            Recipes
+          <h1 className='flex justify-center'>
+            Tasty Recipes
           </h1>
         </nav>
         {children}
