@@ -23,6 +23,12 @@ interface Recipe {
 
 async function getRecipes(): Promise<Recipe[]> {
   const result = await fetch("http://localhost:4000/recipes");
+  
+  // Delay response to showcase skeleton component: 
+  await new Promise((resolve) => setTimeout(resolve, 1500))
+  
+  // With the above setTimeout, below will not return until 
+  // 3 seconds, which will showcase the skeleton in the meantime
   return result.json();
 };
 
