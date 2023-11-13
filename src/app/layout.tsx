@@ -26,7 +26,9 @@ export default function RootLayout({
             disableTransitionOnChange
           >
         <nav>
-          <ModeToggle></ModeToggle>
+          <div className='flex justify-end'>
+          <ModeToggle/>
+          </div>
           <h1 className='flex justify-center'>
             Tasty Recipes
           </h1>
